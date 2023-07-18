@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+$primary-color: #00FFA3;
+$font-family: 'Bruno Ace SC', cursive;
+
+button{
+	border: none;
+	box-shadow: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+ul{
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+h1{
+	font-size: 128px;
+	margin: 0;
+}
+h2{
+	font-size: 40px;
+	margin: 0;
+}
+.fs-1{
+	font-size: 32px;
+}
+.fs-2{
+	font-size: 32px;
+}
+.fs-3{
+	font-size: 20px;
+}
+.text-primary{
+	color: $primary-color;
+}
+.text-start{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-end{
+	text-align: right;
+}
+.container{
+	max-width: 1296px;
+	margin: 0 auto;
+}
+.col-5{
+	max-width: 526px;
+}
+.col-6{
+	max-width: 636px;
+}
+.col-7{
+	max-width: 746px;
+}
+.title{
+	font-size: 64px;
+}
+.btn{
+	position: relative;
+	font-family: $font-family;
+	border-radius: 32px;
+	line-height: 24px;
+	padding: 12px 52px 12px 24px;
+	cursor: pointer;
+	transition: all .3s;
+	&::after{
+		content: '';
+		position: absolute;
+		top: calc(50% - 12px);
+		right: 24px;
+		width: 24px;
+		height: 24px;
+		background-image: url(../images/arrow_outward.png);
+		background-size: contain;
+	}
+	&:hover{
+		background: #4d4d4d;
+		transition: all .3s;
+	}
+}
+.btn-light{
+	background: #fff;
+	&::after{
+		background-image: url(../images/arrow_outward.png);
+	}
+	&:hover{
+		color: #fff;
+		&::after{
+			background-image: url(../images/arrow_outward-white.png);
+		}
+	}
+}
+.btn-dark{
+	background: #000;
+	color: #fff;
+	&::after{
+		background-image: url(../images/arrow_outward-white.png);
+	}
+}
+.flex{
+	display: flex;
+}
+.align-items-center{
+	align-items: center;
+}
