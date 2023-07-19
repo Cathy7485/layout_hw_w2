@@ -1,9 +1,10 @@
 body{
 	font-family: $font-family;
-	font-family: 16px;
+	font-size: 16px;
 	line-height: 1.5;
 	background: #000;
 	color: #fff;
+	margin: 0;
 }
 header{
 	padding-top: 40px;
@@ -47,5 +48,77 @@ header{
 	.info{
 		font-size: 24px;
 		margin-bottom: 32px;
+	}
+}
+.about{
+	padding: 160px 0;
+	background: #fff;
+	color: #000;
+	.point{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		.point-item{
+			width: 306px;
+			min-height: 148px;
+			padding: 16px;
+			border: solid 1px #E3E3E3;
+			box-sizing: border-box;
+		}
+	}
+	.right{
+		display: flex;
+		margin-left: auto;
+	}
+	.info-box{
+		margin-left: auto;
+		max-width: 526px;
+	}
+}
+.contact{
+	padding: 96px 0;
+	background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+	.title{
+		font-size: 64px;
+		white-space:nowrap;
+		display: flex;
+		align-items: center;
+		img{
+			display: inline-block;
+			margin-left: 16px;
+		}
+	}
+	.right{
+		display: flex;
+		margin-left: auto;
+		.btn-list{
+			display: flex;
+			justify-content: space-between;
+			max-width: 526px;
+			a{
+				display: block;
+				margin-right: 20px;
+				border-radius: 40px;
+				transition: all .3s;
+				&:last-child{
+					margin-right: 0;
+				}
+				&:hover{
+					box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.90), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+					transition: all .3s;
+				}
+			}
+		}
+	}
+}
+.projects{
+	padding: 160px 0;
+	background: #fff;
+	color: #000;
+	.title{
+		font-size: 64px;
+		display: flex;
+		margin-left: auto;
 	}
 }

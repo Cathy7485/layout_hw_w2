@@ -9,6 +9,14 @@ a {
   color: #fff;
 }
 
+p {
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -30,7 +38,7 @@ h2 {
 }
 
 .fs-2 {
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .fs-3 {
@@ -51,6 +59,10 @@ h2 {
 
 .text-end {
   text-align: right;
+}
+
+.d-block {
+  display: block;
 }
 
 .container {
@@ -129,10 +141,11 @@ h2 {
 
 body {
   font-family: "Bruno Ace SC", cursive;
-  font-family: 16px;
+  font-size: 16px;
   line-height: 1.5;
   background: #000;
   color: #fff;
+  margin: 0;
 }
 
 header {
@@ -180,4 +193,79 @@ header .navbar li a:hover {
 .introduction .info {
   font-size: 24px;
   margin-bottom: 32px;
+}
+
+.about {
+  padding: 160px 0;
+  background: #fff;
+  color: #000;
+}
+.about .point {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about .point .point-item {
+  width: 306px;
+  min-height: 148px;
+  padding: 16px;
+  border: solid 1px #E3E3E3;
+  box-sizing: border-box;
+}
+.about .right {
+  display: flex;
+  margin-left: auto;
+}
+.about .info-box {
+  margin-left: auto;
+  max-width: 526px;
+}
+
+.contact {
+  padding: 96px 0;
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+.contact .title {
+  font-size: 64px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+.contact .title img {
+  display: inline-block;
+  margin-left: 16px;
+}
+.contact .right {
+  display: flex;
+  margin-left: auto;
+}
+.contact .right .btn-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 526px;
+}
+.contact .right .btn-list a {
+  display: block;
+  margin-right: 20px;
+  border-radius: 40px;
+  transition: all 0.3s;
+}
+.contact .right .btn-list a:last-child {
+  margin-right: 0;
+}
+.contact .right .btn-list a:hover {
+  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+}
+
+.projects {
+  padding: 160px 0;
+  background: #fff;
+  color: #000;
+}
+.projects .title {
+  font-size: 64px;
+  display: flex;
+  margin-left: auto;
 }
