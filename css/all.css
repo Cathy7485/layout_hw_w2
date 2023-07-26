@@ -139,6 +139,14 @@ h2 {
   align-items: center;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
+.mb-2 {
+  margin-bottom: 24px;
+}
+
 body {
   font-family: "Bruno Ace SC", cursive;
   font-size: 16px;
@@ -150,12 +158,12 @@ body {
 
 header {
   padding-top: 40px;
-  padding-bottom: 24px;
 }
 header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: 0;
 }
 header .navbar li {
   max-width: 306px;
@@ -221,6 +229,9 @@ header .navbar li a:hover {
   margin-left: auto;
   max-width: 526px;
 }
+.about .info-box .title {
+  margin-bottom: 36px;
+}
 
 .contact {
   padding: 96px 0;
@@ -268,4 +279,25 @@ header .navbar li a:hover {
   font-size: 64px;
   display: flex;
   margin-left: auto;
+  margin-bottom: 16px;
+}
+.projects .left-img {
+  margin-right: 24px;
+}
+.projects .right-top {
+  margin-bottom: 28px;
+}
+.projects .info {
+  margin-bottom: auto;
+}
+.projects .btn {
+  max-width: 185px;
+  font-size: 16px;
+}
+
+.footer {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 40px 0;
+  font-size: 16px;
 }
