@@ -5,11 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>layout-profile</title>
 	<link rel="stylesheet" href="css/all.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<header>
 		<div class="container">
-			<ul class="navbar">
+			<ul class="navbar" data-aos="zoom-in">
 				<li><a href="#">WILLIAM LEE</a></li>
 				<li><a href="#">BASED IN TAIWAN</a></li>
 				<li><a href="#">CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</a></li>
@@ -17,7 +18,7 @@
 			</ul>
 		</div>
 	</header>
-<section class="profile">
+<section class="profile" data-aos="zoom-in">
 	<div class="container">
 		<div class="flex align-items-center">
 			<div class="image-outer col-6"><img src="images/people.png" alt="william-photo"></div>
@@ -53,7 +54,7 @@
 <section class="about">
 	<div class="container">
 		<div class="flex align-items-center">
-			<div class="col-6">
+			<div class="col-6" data-aos="zoom-in-right">
 				<div class="point">
 					<div class="point-item mb-2">
 						<div class="fs-3">
@@ -99,7 +100,7 @@
 	<div class="container">
 		<div class="flex align-items-center">
 			<div class="col-6">
-				<div class="title">
+				<div class="title" data-aos="zoom-in-right">
 					<div class="d-inline-block">CONTACT ME</div>
 					<img src="images/trending_flat_black_24dp 1.png" alt="arrow">
 				</div>
@@ -120,7 +121,7 @@
 		</div>
 	</div>
 </section>
-<section class="projects">
+<section class="projects" data-aos="fade-up" data-aos-duration="2000">
 	<div class="container">
 		<div class="col-7 title">My Projects</div>
 		<div class="flex">
@@ -149,5 +150,9 @@
 <section class="footer">
 	all rights reserved @hexschool2023
 </section>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
 </body>
 </html>
